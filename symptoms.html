@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>身体信号自查 · 营养学全集</title>
+<meta name="description" content="36 类常见身体信号：脱发、抽筋、失眠、口腔溃疡、怕冷……反查可能缺乏的微量元素与维生素，并给出食补方向与就医红线。">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="symptoms">
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html">
+      <span class="brand__cn">营养学全集</span>
+      <span class="brand__en">Nutrition Atlas</span>
+    </a>
+    <nav class="nav">
+      <a href="nutrients.html">营养素图鉴</a>
+      <a href="symptoms.html" aria-current="page">身体信号</a>
+      <a href="foods.html">食补图鉴</a>
+      <span class="nav__sep"></span>
+      <a href="male.html" data-sex="male">男性营养</a>
+      <a href="female.html" data-sex="female">女性营养</a>
+    </nav>
+    <button class="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="nutrients.html">营养素图鉴 <i>01</i></a>
+  <a href="symptoms.html">身体信号自查 <i>02</i></a>
+  <a href="foods.html">食补图鉴 <i>03</i></a>
+  <a href="male.html">男性营养 <i>04</i></a>
+  <a href="female.html">女性营养 <i>05</i></a>
+</div>
+
+<section class="sec sec--tight" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="kicker kicker--clay">02 / Body Signals</span></div>
+    <div class="hero__grid" style="align-items:center">
+      <div>
+        <h1 style="font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.08;margin-bottom:20px" class="rv" data-d="1">
+          身体信号自查
+        </h1>
+        <p class="lead rv" data-d="2" style="max-width:46ch">
+          输入你正在经历的症状，看看生理学上最可能相关的营养素是哪些。
+          每一项都标注了关联强度——颜色越深，证据越直接。
+        </p>
+      </div>
+      <figure class="hero__figure hero__figure--wide rv" data-d="2">
+        <img src="img/hero-symptoms.jpg" alt="身体疲惫的信号" width="1600" height="900">
+        <figcaption><span>症状 → 营养素 → 食物</span><span>36 signals</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="search rv">
+      <span id="sicon"></span>
+      <input id="sinput" type="search" placeholder="输入症状关键词，例如：脱发、抽筋、失眠、口腔溃疡……" aria-label="搜索症状">
+      <button class="search__clr" id="sclear">清空</button>
+    </div>
+    <div class="filters rv" id="sfilters"></div>
+    <div class="slist" id="slist"></div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="disclaim rv">
+      <b>重要提醒</b>
+      <p>同一症状往往有多个可能原因，营养素缺乏只是其中之一。<strong>本页用于提供线索，不是诊断工具</strong>。红色标注的「就医提示」请务必认真对待——某些症状背后是必须尽快处理的器质性问题，补充营养无法解决。任何持续两周以上的不适，都建议先做基础检查（血常规、铁蛋白、甲功、维生素 D 等）再谈补充。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span style="font-family:var(--serif);font-size:1.15rem;letter-spacing:.06em">营养学全集</span>
+        <p>把身体的信号翻译成营养素的语言，再把营养素还原成餐盘上的食物。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="nutrients.html">营养素图鉴</a></li>
+          <li><a href="symptoms.html">身体信号自查</a></li>
+          <li><a href="foods.html">食补图鉴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分册</h4>
+        <ul>
+          <li><a href="male.html">男性营养</a></li>
+          <li><a href="female.html">女性营养</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>营养学全集 · Nutrition Atlas</span>
+      <span>内容用于科普参考，不替代医学诊断</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data-core.js"></script>
+<script src="js/data-gender.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

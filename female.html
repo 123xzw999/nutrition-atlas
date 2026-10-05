@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>女性营养 · 营养学全集</title>
+<meta name="description" content="女性一生的营养曲线：青春期、育龄期与经期、备孕与孕期、哺乳期、更年期与绝经后，五段生命周期的营养需求。">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="female" class="female">
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html">
+      <span class="brand__cn">营养学全集</span>
+      <span class="brand__en">Nutrition Atlas</span>
+    </a>
+    <nav class="nav">
+      <a href="nutrients.html">营养素图鉴</a>
+      <a href="symptoms.html">身体信号</a>
+      <a href="foods.html">食补图鉴</a>
+      <span class="nav__sep"></span>
+      <a href="male.html" data-sex="male">男性营养</a>
+      <a href="female.html" data-sex="female" aria-current="page">女性营养</a>
+    </nav>
+    <button class="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="nutrients.html">营养素图鉴 <i>01</i></a>
+  <a href="symptoms.html">身体信号自查 <i>02</i></a>
+  <a href="foods.html">食补图鉴 <i>03</i></a>
+  <a href="male.html">男性营养 <i>04</i></a>
+  <a href="female.html">女性营养 <i>05</i></a>
+</div>
+
+<section class="sexhero">
+  <div class="wrap sexhero__in">
+    <div>
+      <div class="eyebrow rv"><span class="kicker" style="color:var(--female)">05 / Female Nutrition</span></div>
+      <h1 class="rv" data-d="1">女性一生的<em>营养曲线</em></h1>
+      <p class="lead rv" data-d="2" style="max-width:44ch">
+        女性的营养需求不是一条水平线，而是一条随生命周期起伏的曲线——
+        月经带来的铁流失、怀孕翻倍的需求、绝经后骨量的加速下滑，
+        每个阶段的重点都不同。
+      </p>
+    </div>
+    <figure class="rv" data-d="2" style="margin:0">
+      <img src="img/hero-female.jpg" alt="女性健康早餐" width="1200" height="900">
+      <figcaption style="display:flex;justify-content:space-between;margin-top:11px;padding-top:10px;border-top:1px solid var(--rule);font-size:.7rem;letter-spacing:.06em;color:var(--ink-4)">
+        <span>铁 · 钙 · 叶酸 · 碘 · 维生素 D</span><span>Five stages</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">A</span>
+      <h2 class="sec__title">生理差异<small>Why It Differs</small></h2>
+      <p class="sec__aside">四条底层差异，决定了女性营养的重点与男性不同。</p>
+    </div>
+    <dl class="introgrid" id="sexIntro"></dl>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">B</span>
+      <h2 class="sec__title">五段生命周期<small>Five Stages</small></h2>
+      <p class="sec__aside">从初潮到绝经，营养需求的曲线在这五个节点上发生明显转折。</p>
+    </div>
+    <div class="tl" id="sexStages"></div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">C</span>
+      <h2 class="sec__title">最容易缺的几样<small>Common Gaps</small></h2>
+      <p class="sec__aside">百分比表示摄入不足的女性比例（依据中国居民营养调查口径的估算）。</p>
+    </div>
+    <div class="gapbars" id="sexGaps" style="max-width:720px"></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">D</span>
+      <h2 class="sec__title">一日示范餐单<small>Sample Day</small></h2>
+      <p class="sec__aside">以育龄期女性为例，兼顾铁吸收、钙摄入与经前症状的干预窗口。</p>
+    </div>
+    <div id="sexPlan"></div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="disclaim rv">
+      <b>使用说明</b>
+      <p>女性专区内容针对一般健康成年女性。孕期、哺乳期、多囊卵巢综合征、甲状腺疾病、子宫内膜异位症等人群，营养需求差异较大，请以产科或专科医生的个体化建议为准。<strong>孕期任何补充剂（尤其是维生素 A）都必须先咨询医生</strong>——维生素 A 过量有明确的致畸风险。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span style="font-family:var(--serif);font-size:1.15rem;letter-spacing:.06em">营养学全集</span>
+        <p>把身体的信号翻译成营养素的语言，再把营养素还原成餐盘上的食物。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="nutrients.html">营养素图鉴</a></li>
+          <li><a href="symptoms.html">身体信号自查</a></li>
+          <li><a href="foods.html">食补图鉴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分册</h4>
+        <ul>
+          <li><a href="male.html">男性营养</a></li>
+          <li><a href="female.html">女性营养</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>营养学全集 · Nutrition Atlas</span>
+      <span>内容用于科普参考，不替代医学诊断</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data-core.js"></script>
+<script src="js/data-gender.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

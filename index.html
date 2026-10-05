@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>营养学全集 · 微量元素、身体信号与食补图鉴</title>
+<meta name="description" content="从身体的细微信号出发，反查可能缺乏的微量元素、常量元素与维生素，并给出对应的高营养密度食物。分设男性与女性专区。">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="home">
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html">
+      <span class="brand__cn">营养学全集</span>
+      <span class="brand__en">Nutrition Atlas</span>
+    </a>
+    <nav class="nav">
+      <a href="nutrients.html">营养素图鉴</a>
+      <a href="symptoms.html">身体信号</a>
+      <a href="foods.html">食补图鉴</a>
+      <span class="nav__sep"></span>
+      <a href="male.html" data-sex="male">男性营养</a>
+      <a href="female.html" data-sex="female">女性营养</a>
+    </nav>
+    <button class="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="nutrients.html">营养素图鉴 <i>01</i></a>
+  <a href="symptoms.html">身体信号自查 <i>02</i></a>
+  <a href="foods.html">食补图鉴 <i>03</i></a>
+  <a href="male.html">男性营养 <i>04</i></a>
+  <a href="female.html">女性营养 <i>05</i></a>
+</div>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <div class="hero__meta rv">
+        <div><b class="num">23</b><span>营养素</span></div>
+        <div><b class="num">36</b><span>身体信号</span></div>
+        <div><b class="num">33</b><span>高密度食物</span></div>
+        <div><b class="num">05</b><span>生命周期</span></div>
+      </div>
+      <h1 class="rv" data-d="1">身体发出的每一个信号，<br>都<em>对应着</em>一种营养素。</h1>
+      <p class="lead hero__lead rv" data-d="2">
+        脱发不只是熬夜，抽筋不只是缺钙，怕冷不只是体寒。
+        这份图鉴把身体的细微信号与微量元素、常量元素、维生素逐一对照，
+        并落到具体的食物上——不谈玄学，只讲生理。
+      </p>
+      <div class="hero__cta rv" data-d="3">
+        <a class="btn" href="symptoms.html">从症状开始查 <span class="arw">→</span></a>
+        <a class="btn btn--ghost" href="nutrients.html">浏览营养素图鉴</a>
+      </div>
+    </div>
+    <figure class="hero__figure rv" data-d="2">
+      <img src="img/hero-cover.jpg" alt="新鲜蔬果与食材" width="1600" height="900">
+      <figcaption><span>01 / 从食物到细胞</span><span>Nutrition Atlas</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="wrap"><div class="strip rv">
+  <div class="strip__i"><b class="num">13</b><span>矿物质</span></div>
+  <div class="strip__i"><b class="num">10</b><span>维生素</span></div>
+  <div class="strip__i"><b class="num">36</b><span>症状对照</span></div>
+  <div class="strip__i"><b class="num">33</b><span>食材条目</span></div>
+  <div class="strip__i"><b class="num">06</b><span>男性主线</span></div>
+  <div class="strip__i"><b class="num">05</b><span>女性阶段</span></div>
+</div></div>
+
+<!-- ============ 目录 ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">01</span>
+      <h2 class="sec__title">目录<small>Contents</small></h2>
+      <p class="sec__aside">五个入口，按「查什么」而不是按「是什么」组织。</p>
+    </div>
+    <div class="toc" id="toc"></div>
+  </div>
+</section>
+
+<!-- ============ 营养素速览 ============ -->
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">02</span>
+      <h2 class="sec__title">矿物质速览<small>Minerals at a Glance</small></h2>
+      <p class="sec__aside">缺少时最先报警的，往往不是化验单，而是这些日常体感。</p>
+    </div>
+    <div class="qgrid" id="quickNutrients"></div>
+    <div style="margin-top:26px" class="rv">
+      <a class="btn btn--ghost" href="nutrients.html">查看全部 23 种营养素 <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 症状抽样 ============ -->
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">03</span>
+      <h2 class="sec__title">身体信号<small>Body Signals</small></h2>
+      <p class="sec__aside">36 类常见症状，每一类都给出可能缺乏的营养素与食补方向。</p>
+    </div>
+    <div class="sgrid" id="quickSymptoms"></div>
+    <div style="margin-top:26px" class="rv">
+      <a class="btn btn--ghost" href="symptoms.html">进入症状自查 <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 男女分流 ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">04</span>
+      <h2 class="sec__title">男女分册<small>Two Tracks</small></h2>
+      <p class="sec__aside">生理结构不同，营养需求曲线也不同。与其看一份通用建议，不如看属于你的那一份。</p>
+    </div>
+    <div class="toc">
+      <a class="toc__row rv" href="male.html">
+        <span class="toc__no num">M</span>
+        <span class="toc__t" style="color:var(--male)">男性营养</span>
+        <span class="toc__d">肌肉与力量、前列腺健康、心血管、头发头皮、精力与激素、酒精的营养透支——六条主线。</span>
+        <span class="toc__thumb"><img src="img/hero-male.jpg" alt="" loading="lazy"></span>
+      </a>
+      <a class="toc__row rv" href="female.html">
+        <span class="toc__no num">F</span>
+        <span class="toc__t" style="color:var(--female)">女性营养</span>
+        <span class="toc__d">青春期、育龄期与经期、备孕与孕期、哺乳期、更年期——五段生命周期，每一段的需求都不一样。</span>
+        <span class="toc__thumb"><img src="img/hero-female.jpg" alt="" loading="lazy"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 声明 ============ -->
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="disclaim rv">
+      <b>使用说明</b>
+      <p>本站内容基于《中国居民膳食营养素参考摄入量（2023 版）》与世界卫生组织营养素缺乏症资料整理，用于营养科普与自查参考，<strong>不构成医学诊断或治疗建议</strong>。症状往往由多种因素共同导致，营养素缺乏只是其中一类原因。若症状持续、加重或伴随其他异常表现，请及时就医，以临床检查结果为准。任何补充剂的使用，尤其是孕期、哺乳期、儿童及慢性病患者，请先咨询医生或注册营养师。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span class="brand__cn" style="font-family:var(--serif);font-size:1.15rem;letter-spacing:.06em">营养学全集</span>
+        <p>把身体的信号翻译成营养素的语言，再把营养素还原成餐盘上的食物。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="nutrients.html">营养素图鉴</a></li>
+          <li><a href="symptoms.html">身体信号自查</a></li>
+          <li><a href="foods.html">食补图鉴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分册</h4>
+        <ul>
+          <li><a href="male.html">男性营养</a></li>
+          <li><a href="female.html">女性营养</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>营养学全集 · Nutrition Atlas</span>
+      <span>内容用于科普参考，不替代医学诊断</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data-core.js"></script>
+<script src="js/data-gender.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

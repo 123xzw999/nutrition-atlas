@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>营养素图鉴 · 营养学全集</title>
+<meta name="description" content="13 种矿物质与 10 种维生素：生理作用、缺乏体征、高危人群、推荐摄入量与食补方向。">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="nutrients">
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html">
+      <span class="brand__cn">营养学全集</span>
+      <span class="brand__en">Nutrition Atlas</span>
+    </a>
+    <nav class="nav">
+      <a href="nutrients.html" aria-current="page">营养素图鉴</a>
+      <a href="symptoms.html">身体信号</a>
+      <a href="foods.html">食补图鉴</a>
+      <span class="nav__sep"></span>
+      <a href="male.html" data-sex="male">男性营养</a>
+      <a href="female.html" data-sex="female">女性营养</a>
+    </nav>
+    <button class="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="nutrients.html">营养素图鉴 <i>01</i></a>
+  <a href="symptoms.html">身体信号自查 <i>02</i></a>
+  <a href="foods.html">食补图鉴 <i>03</i></a>
+  <a href="male.html">男性营养 <i>04</i></a>
+  <a href="female.html">女性营养 <i>05</i></a>
+</div>
+
+<section class="sec sec--tight" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="kicker kicker--green">01 / Nutrients</span></div>
+    <div class="hero__grid" style="align-items:center">
+      <div>
+        <h1 style="font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.08;margin-bottom:20px" class="rv" data-d="1">
+          营养素图鉴
+        </h1>
+        <p class="lead rv" data-d="2" style="max-width:46ch">
+          人体需要 20 余种矿物质与 13 种维生素。它们的名字你多半听过，
+          但真正决定你是否缺乏的，是吸收率、拮抗关系与你的生活方式——
+          而不只是「吃没吃到」。
+        </p>
+      </div>
+      <figure class="hero__figure hero__figure--wide rv" data-d="2">
+        <img src="img/hero-nutrients.jpg" alt="坚果、种子与谷物" width="1600" height="900">
+        <figcaption><span>矿物质 · 维生素 · 协同与拮抗</span><span>23 entries</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">23</span>
+      <h2 class="sec__title">全部条目<small>Index</small></h2>
+      <p class="sec__aside">点击任意一行展开完整条目：生理作用、缺乏表现、高危人群与食补方向。</p>
+    </div>
+    <div class="filters rv" id="nfilters">
+      <span class="filters__lbl">分组</span>
+      <button class="chip" data-f="all" aria-pressed="true">全部</button>
+      <button class="chip" data-f="trace" aria-pressed="false">微量元素</button>
+      <button class="chip" data-f="macro" aria-pressed="false">常量元素</button>
+      <button class="chip" data-f="vitamin" aria-pressed="false">维生素</button>
+    </div>
+    <div class="nlist" id="nlist"></div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="disclaim rv">
+      <b>阅读提示</b>
+      <p>「推荐摄入量」为一般健康成人的参考值，实际需求随年龄、性别、生理状态与疾病而变化。矿物质之间存在竞争与协同（例如锌与铜、钙与镁、铁与维生素 C），单独大剂量补充某一种，常常会打破平衡。优先通过食物获取，补充剂请在专业指导下使用。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span style="font-family:var(--serif);font-size:1.15rem;letter-spacing:.06em">营养学全集</span>
+        <p>把身体的信号翻译成营养素的语言，再把营养素还原成餐盘上的食物。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="nutrients.html">营养素图鉴</a></li>
+          <li><a href="symptoms.html">身体信号自查</a></li>
+          <li><a href="foods.html">食补图鉴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分册</h4>
+        <ul>
+          <li><a href="male.html">男性营养</a></li>
+          <li><a href="female.html">女性营养</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>营养学全集 · Nutrition Atlas</span>
+      <span>内容用于科普参考，不替代医学诊断</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data-core.js"></script>
+<script src="js/data-gender.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>食补图鉴 · 营养学全集</title>
+<meta name="description" content="33 种高营养密度食材：动物肝脏、牡蛎、沙丁鱼、菠菜、南瓜子、巴西坚果……标注关键营养素与实际含量。">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="foods">
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html">
+      <span class="brand__cn">营养学全集</span>
+      <span class="brand__en">Nutrition Atlas</span>
+    </a>
+    <nav class="nav">
+      <a href="nutrients.html">营养素图鉴</a>
+      <a href="symptoms.html">身体信号</a>
+      <a href="foods.html" aria-current="page">食补图鉴</a>
+      <span class="nav__sep"></span>
+      <a href="male.html" data-sex="male">男性营养</a>
+      <a href="female.html" data-sex="female">女性营养</a>
+    </nav>
+    <button class="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="nutrients.html">营养素图鉴 <i>01</i></a>
+  <a href="symptoms.html">身体信号自查 <i>02</i></a>
+  <a href="foods.html">食补图鉴 <i>03</i></a>
+  <a href="male.html">男性营养 <i>04</i></a>
+  <a href="female.html">女性营养 <i>05</i></a>
+</div>
+
+<section class="sec sec--tight" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="eyebrow rv"><span class="kicker kicker--green">03 / Foods</span></div>
+    <div class="hero__grid" style="align-items:center">
+      <div>
+        <h1 style="font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.08;margin-bottom:20px" class="rv" data-d="1">
+          食补图鉴
+        </h1>
+        <p class="lead rv" data-d="2" style="max-width:46ch">
+          与其记住「缺什么补什么」，不如记住「吃这些就够了」。
+          营养密度衡量的是单位热量里能带来多少营养素——它比「热量高低」更值得关心。
+        </p>
+      </div>
+      <figure class="hero__figure hero__figure--wide rv" data-d="2">
+        <img src="img/hero-foods.jpg" alt="高营养密度食材" width="1600" height="900">
+        <figcaption><span>密度 90+ 的食材优先</span><span>33 entries</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="sec__no num">33</span>
+      <h2 class="sec__title">全部食材<small>Index</small></h2>
+      <p class="sec__aside">点击任意一张卡片查看详细说明、关键营养素含量与食用建议。</p>
+    </div>
+    <div class="filters rv" id="ffilters"></div>
+    <div class="fgrid" id="fgrid" style="margin-top:34px"></div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="disclaim rv">
+      <b>关于营养密度</b>
+      <p>「密度」是本站为便于比较而设的综合评分（0–100），参考单位重量中关键营养素的含量、生物利用度与膳食贡献度，用于横向排序，<strong>并非国际标准指标</strong>。实际选择食物时，还需结合个人口味、饮食文化与经济条件——能长期坚持的饮食结构，才是有效的饮食结构。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span style="font-family:var(--serif);font-size:1.15rem;letter-spacing:.06em">营养学全集</span>
+        <p>把身体的信号翻译成营养素的语言，再把营养素还原成餐盘上的食物。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="nutrients.html">营养素图鉴</a></li>
+          <li><a href="symptoms.html">身体信号自查</a></li>
+          <li><a href="foods.html">食补图鉴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分册</h4>
+        <ul>
+          <li><a href="male.html">男性营养</a></li>
+          <li><a href="female.html">女性营养</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>营养学全集 · Nutrition Atlas</span>
+      <span>内容用于科普参考，不替代医学诊断</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 食物详情抽屉 -->
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet__veil"></div>
+  <aside class="sheet__panel" id="sheetPanel">
+    <button class="sheet__close">关闭 &nbsp;×</button>
+    <img class="sheet__img" id="sheetImg" alt="">
+    <div class="sheet__bd">
+      <h3 id="sheetName"></h3>
+      <div class="sheet__sub" id="sheetSub"></div>
+      <div class="sheet__data num" id="sheetData"></div>
+      <p class="sheet__p" id="sheetDesc"></p>
+      <div class="blk">
+        <div class="blk__h">关键营养素</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap" id="sheetNt"></div>
+      </div>
+      <div class="quote" id="sheetTip"></div>
+    </div>
+  </aside>
+</div>
+
+<script src="js/data-core.js"></script>
+<script src="js/data-gender.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
