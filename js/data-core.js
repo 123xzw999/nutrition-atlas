@@ -162,9 +162,11 @@ NA.minerals = [
     foods: ['sodium', 'food-seaweed', 'food-cheese'],
     note: '钠与钾是同一枚硬币的两面。与其死盯「少放盐」，不如提高钾的摄入——钾钠比改善了，血压自然受益。',
     metric: '血钠参考范围 135–145 mmol/L。'
-  },
+  }
+];
 
-  /* ---------- 维生素 ---------- */
+/* ---------- 二、维生素 ---------- */
+NA.vitamins = [
   {
     id: 'vitamin-a', name: '维生素 A', symbol: 'A', en: 'Vitamin A', group: 'vitamin', img: 'img/vitamin-a.jpg',
     tagline: '视觉、黏膜与皮肤的守门人',

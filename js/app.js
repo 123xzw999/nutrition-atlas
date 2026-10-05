@@ -150,8 +150,8 @@
     var toc = $('#toc'); if (!toc) return;
     var rows = [
       { no: '01', t: '营养素图鉴', d: '13 种矿物质 + 10 种维生素，从生理作用到缺乏体征逐条拆解', href: 'nutrients.html', img: 'img/hero-nutrients.jpg' },
-      { no: '02', t: '身体信号自查', d: '36 类常见症状对应可能缺乏的营养素，附食补方向与就医红线', href: 'symptoms.html', img: 'img/hero-symptoms.jpg' },
-      { no: '03', t: '食补图鉴', d: '33 种高营养密度食材，标注关键营养素与实际含量', href: 'foods.html', img: 'img/hero-foods.jpg' },
+      { no: '02', t: '身体信号自查', d: '35 类常见症状对应可能缺乏的营养素，附食补方向与就医红线', href: 'symptoms.html', img: 'img/hero-symptoms.jpg' },
+      { no: '03', t: '食补图鉴', d: '35 种高营养密度食材，标注关键营养素与实际含量', href: 'foods.html', img: 'img/hero-foods.jpg' },
       { no: '04', t: '男性营养', d: '肌肉、前列腺、心血管、精力与酒精透支的六条主线', href: 'male.html', img: 'img/hero-male.jpg' },
       { no: '05', t: '女性营养', d: '青春期到绝经后的五段生命周期，需求曲线完全不同', href: 'female.html', img: 'img/hero-female.jpg' }
     ];
